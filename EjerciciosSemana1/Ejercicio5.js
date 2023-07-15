@@ -1,3 +1,5 @@
+"user strict";
+
 const palabra1 = "hola";
 const palabra2 = "aloha";
 const palabra3 = "computadora";

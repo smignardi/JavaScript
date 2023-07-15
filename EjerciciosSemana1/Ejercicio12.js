@@ -1,3 +1,5 @@
+"user strict";
+
 const { generarEnteroAleatorio } = require("../Utilities/RandomUtilities");
 
 function calcularNumCabezas(vacas, gallinas) {

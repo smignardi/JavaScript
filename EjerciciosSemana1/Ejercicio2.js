@@ -1,3 +1,5 @@
+"user strict";
+
 const {
   generarNumeroDecimalAleatorio,
 } = require("../Utilities/RandomUtilities");
