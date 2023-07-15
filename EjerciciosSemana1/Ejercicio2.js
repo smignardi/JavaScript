@@ -11,6 +11,10 @@ function calcularHipotenusa(num1, num2) {
 
 const hipotenusa = calcularHipotenusa(cateto1, cateto2);
 
-console.log(
-  `El triangulo de catetos ${cateto1} y ${cateto2} tiene una hipotenusa de ${hipotenusa}`
-);
+function imprimirMensaje(cat1, cat2, hipotenusa) {
+  console.log(
+    `El triangulo de catetos ${cat1} y ${cat2} tiene una hipotenusa de ${hipotenusa}`
+  );
+}
+
+imprimirMensaje(cateto1, cateto2, hipotenusa);

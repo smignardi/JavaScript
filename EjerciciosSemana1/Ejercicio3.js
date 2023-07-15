@@ -15,8 +15,11 @@ function calcularArea(lado) {
 const perimetro = calcularPerimetro(lado);
 const area = calcularArea(lado);
 
-console.log(
-  `El perímetro de un triángulo equilátero de lado ${lado} es ${perimetro}`
-);
+function imprimirMensaje(lado, perimetro, area) {
+  console.log(
+    `El perímetro de un triángulo equilátero de lado ${lado} es ${perimetro}`
+  );
+  console.log(`El área de un triángulo equilátero de lado ${lado} es ${area}`);
+}
 
-console.log(`El área de un triángulo equilátero de lado ${lado} es ${area}`);
+imprimirMensaje(lado, perimetro, area);

@@ -15,9 +15,13 @@ function calcularArea(radio) {
 const perimetro = calcularPerimetro(radio);
 const area = calcularArea(radio);
 
-console.log(
-  `Con un radio de ${radio} m se obtiene un perimetro ${perimetro} metros`
-);
-console.log(
-  `Con un radio de ${radio} m se obtiene un area de ${area} metros cuadrados`
-);
+function imprimirMensaje(radio, perimetro, area) {
+  console.log(
+    `Con un radio de ${radio} m se obtiene un perimetro ${perimetro} metros`
+  );
+  console.log(
+    `Con un radio de ${radio} m se obtiene un area de ${area} metros cuadrados`
+  );
+}
+
+imprimirMensaje(radio, perimetro, area);

@@ -8,4 +8,8 @@ function concatenarCadenas(word1, word2, word3) {
 
 const cadenaConcatenada = concatenarCadenas(palabra1, palabra2, palabra3);
 
-console.log(cadenaConcatenada);
+function imprimirMensaje(palabra1, palabra2, palabra3, palabra4) {
+  console.log(concatenarCadenas(palabra1, palabra2, palabra3));
+}
+
+imprimirMensaje(palabra1, palabra2, palabra3);

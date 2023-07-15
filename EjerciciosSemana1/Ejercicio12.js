@@ -14,7 +14,11 @@ const gallinas = generarEnteroAleatorio(1, 5);
 const numCabezas = calcularNumCabezas(vacas, gallinas);
 const numPatas = calcularNumPatas(vacas, gallinas);
 
-console.log(
-  `En ${vacas} vacas & ${gallinas} gallinas hay ${numCabezas} cabezas`
-);
-console.log(`En ${vacas} vacas & ${gallinas} gallinas hay ${numPatas} patas`);
+function imprimirMensaje(vacas, gallinas, cabezas, patas) {
+  console.log(
+    `En ${vacas} vacas & ${gallinas} gallinas hay ${cabezas} cabezas`
+  );
+  console.log(`En ${vacas} vacas & ${gallinas} gallinas hay ${patas} patas`);
+}
+
+imprimirMensaje(vacas, gallinas, numCabezas, numPatas);

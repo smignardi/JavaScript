@@ -11,6 +11,10 @@ function calcularIMC(altura, peso) {
 
 const imc = calcularIMC(altura, peso).toFixed(2);
 
-console.log(
-  `Para el peso ${peso} kg y la altura de ${altura} m se tiene un IMC de ${imc}`
-);
+function imprimirMensaje(peso, altura, imc) {
+  console.log(
+    `Para el peso ${peso} kg y la altura de ${altura} m se tiene un IMC de ${imc}`
+  );
+}
+
+imprimirMensaje(peso, altura, imc);
