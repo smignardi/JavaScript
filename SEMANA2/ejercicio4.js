@@ -4,7 +4,7 @@ const { generarEnteroAleatorio } = require("../Utilities/RandomUtilities");
 
 const n = generarEnteroAleatorio(15, 30);
 
-function calcularMediaArmonica(totalNum) {
+const calcularMediaArmonica = (totalNum) => {
   let valorMediaArmonica = 0;
   let numAleatorioActual = 0;
   for (let i = 0; i < totalNum; i++) {
@@ -12,12 +12,11 @@ function calcularMediaArmonica(totalNum) {
     valorMediaArmonica = valorMediaArmonica + 1 / numAleatorioActual;
   }
   return (totalNum / valorMediaArmonica).toFixed(5);
-}
+};
 
-function imprimirMensaje(n, valorMediaArmonica) {
+const imprimirMensaje = (n, valorMediaArmonica) =>
   console.log(
     `La media armonica es ${valorMediaArmonica} para un valor de N de ${n}`
   );
-}
 
 imprimirMensaje(n, calcularMediaArmonica(n));

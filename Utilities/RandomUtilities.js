@@ -10,8 +10,8 @@ function generarNumeroDecimalAleatorio(min, max) {
 
 /**
  *
- * @param {Number} min
- * @param {Number} max
+ * @param {*} min
+ * @param {*} max
  * @returns
  */
 function generarEnteroAleatorio(min, max) {

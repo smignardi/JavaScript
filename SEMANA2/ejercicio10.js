@@ -7,31 +7,29 @@ const num2 = 335533;
 const num3 = 741;
 const num4 = 321;
 
-let aux = 0;
-let inverso = 0;
-
-function calcularInversa(numero) {
-  aux = numero;
-  inverso = 0;
+const calcularInversa = (numero) => {
+  let aux = numero;
+  let inverso = 0;
 
   while (aux != 0) {
     inverso = 10 * inverso + (aux % 10);
     aux = Math.floor(aux / 10);
   }
   return inverso;
-}
+};
 
-function verificarCapicua(numeroOriginal, numeroInvertido) {
+const verificarCapicua = (numeroOriginal, numeroInvertido) => {
   if (numeroOriginal === numeroInvertido) {
     return "si";
-  } else return "no";
-}
+  } else {
+    return "no";
+  }
+};
 
-function imprimirMensaje(numeroOriginal, numeroInvertido, capicauaValidation) {
+const imprimirMensaje = (numeroOriginal, numeroInvertido, capicauaValidation) =>
   console.log(
     `La inversa de ${numeroOriginal} es ${numeroInvertido} y por ende ${capicauaValidation} es capicua`
   );
-}
 
 imprimirMensaje(
   num1,
