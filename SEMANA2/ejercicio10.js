@@ -19,11 +19,7 @@ const calcularInversa = (numero) => {
 };
 
 const verificarCapicua = (numeroOriginal, numeroInvertido) => {
-  if (numeroOriginal === numeroInvertido) {
-    return "si";
-  } else {
-    return "no";
-  }
+  return numeroOriginal === numeroInvertido;
 };
 
 const imprimirMensaje = (numeroOriginal, numeroInvertido, capicauaValidation) =>

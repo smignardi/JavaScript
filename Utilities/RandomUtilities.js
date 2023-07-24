@@ -1,3 +1,5 @@
+"user strict";
+
 /**
  *
  * @param {Number} min

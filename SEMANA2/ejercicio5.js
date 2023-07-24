@@ -14,11 +14,10 @@ const calcularPromedioPonderado = (cantidadNotas) => {
   for (let i = 0; i < cantidadNotas; i++) {
     promedioAcumulado = promedioAcumulado + notaActual * pesoActual;
   }
-  const pp = promedioAcumulado / cantidadNotas;
-  return pp.toFixed(3);
+  return promedioAcumulado / cantidadNotas;
 };
 
 const imprimirMensaje = (promedioPonderado) =>
-  console.log(`El promedio ponderado es ${promedioPonderado}`);
+  console.log(`El promedio ponderado es ${promedioPonderado.toFixed(3)}`);
 
 imprimirMensaje(calcularPromedioPonderado(n));
