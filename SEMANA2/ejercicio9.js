@@ -13,9 +13,9 @@ const calcularFactorial = (numero) => {
 const imprimirResultado = (valor, resultado) =>
   console.log(`El factorial de ${valor} es ${resultado}`);
 
-let times = 0;
+const times = 0;
 while (times != 5) {
-  let numAleatorio = generarEnteroAleatorio(5, 10);
+  const numAleatorio = generarEnteroAleatorio(5, 10);
   imprimirResultado(numAleatorio, calcularFactorial(numAleatorio));
   times++;
 }
