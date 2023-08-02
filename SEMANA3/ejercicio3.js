@@ -8,13 +8,11 @@ const arrayNumeros = generarArrayAleatorio(lengthArray, 100, 1000);
 const arrayPesos = generarArrayAleatorio(lengthArray, 1, 50);
 
 const calcularPromedioPonderado = (a1, a2) => {
-  let promedioPonderado = 0;
   let aux = 0;
   for (let i = 0; i < lengthArray; i++) {
-    aux = aux + a1[0] * a2[0];
+    aux += a1[i] * a2[i];
   }
-  promedioPonderado = aux / lengthArray;
-  return promedioPonderado;
+  return aux / lengthArray;
 };
 
 const imprimirMensaje = (array1, array2, pp) => {
@@ -23,7 +21,6 @@ const imprimirMensaje = (array1, array2, pp) => {
   console.log(`Promedio ponderado: ${pp}`);
 };
 
-console.log("aea");
 imprimirMensaje(
   arrayNumeros,
   arrayPesos,

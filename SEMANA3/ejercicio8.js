@@ -10,8 +10,9 @@ const arrayPrimos = [];
 const arrayNoPrimos = [];
 
 const esPrimo = (num) => {
-  for (var i = 2, sqrt = Math.sqrt(num); i <= sqrt; i++)
+  for (var i = 2, sqrt = Math.sqrt(num); i <= sqrt; i++) {
     if (num % i === 0) return false;
+  }
   return num > 1;
 };
 

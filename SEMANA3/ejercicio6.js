@@ -11,7 +11,7 @@ console.log(arrayNumeros);
 const calcularMediaArmonica = (arr) => {
   let acumulado = 0;
   for (let i = 0; i < arrayLen; i++) {
-    acumulado = acumulado + 1 / arr[i];
+    acumulado += Math.pow(arr[i], -1);
   }
   return (arrayLen / acumulado).toFixed(5);
 };

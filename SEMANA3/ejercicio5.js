@@ -11,7 +11,7 @@ console.log(arrayNumeros);
 const calcularMediaGeometrica = (arr) => {
   let acumulado = 1;
   for (let i = 0; i < arrayLen; i++) {
-    acumulado = acumulado * arr[0];
+    acumulado *= arr[i];
   }
   return Math.pow(acumulado, 1 / arrayLen).toFixed(5);
 };
