@@ -1,12 +1,12 @@
 "use strict";
 
-const { generarEnteroAleatorio } = require("../UTILITIES/RandomUtilities");
+const { generarEnteroAleatorio } = require("../utilities/RandomUtilities");
 const {
   generarArrayAleatorio,
   sumaArray,
   restaArrays,
   multiplicacionArrays,
-} = require("../UTILITIES/arrayUtilities");
+} = require("../utilities/arrayUtilities");
 
 const lengthArreglos = generarEnteroAleatorio(10, 20);
 const array1 = generarArrayAleatorio(lengthArreglos, 100, 200);
