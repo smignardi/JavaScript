@@ -68,10 +68,10 @@ const multiplicacionArrays = (array1, array2) => {
  * @returns
  */
 const bblSort = (array) => {
-  for (let i = 0; i < arr.length; i++) {
-    for (let j = 0; j < arr.length - i - 1; j++) {
+  for (const i = 0; i < arr.length; i++) {
+    for (const j = 0; j < arr.length - i - 1; j++) {
       if (arr[j] > arr[j + 1]) {
-        let temp = arr[j];
+        const temp = arr[j];
         arr[j] = arr[j + 1];
         arr[j + 1] = temp;
       }
