@@ -10,9 +10,14 @@ const arrayCapicua = [];
 const arrayNoCapicua = [];
 
 const esCapicua = (num) => {
-  var numStr = String(num);
-  var reversedNumStr = numStr.split("").reverse().join("");
-  return numStr === reversedNumStr;
+  let numero = String(num);
+  for (let i = 0; i < numero.length; i++) {
+    if (numero[i] !== numero[numero.length - 1 - i]) {
+      return false;
+    } else {
+      return true;
+    }
+  }
 };
 
 const poblarArrays = (arr, arrCapi, arrNoCapi) => {
