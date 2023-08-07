@@ -12,9 +12,8 @@ const arrayNoCapicua = [];
 const esCapicua = (num) => {
   let aux = num;
   let inverso = 0;
-  let residuo = 0;
   while (aux != 0) {
-    residuo = num % 10;
+    const residuo = num % 10;
     inverso = inverso * 10 + residuo;
     aux = Math.floor(aux / 10);
   }
