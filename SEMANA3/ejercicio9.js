@@ -10,14 +10,16 @@ const arrayCapicua = [];
 const arrayNoCapicua = [];
 
 const esCapicua = (num) => {
-  let numero = String(num);
-  for (let i = 0; i < numero.length; i++) {
-    if (numero[i] !== numero[numero.length - 1 - i]) {
-      return false;
-    } else {
-      return true;
-    }
+  let aux = num;
+  let inverso = 0;
+  let residuo = 0;
+  while (aux != 0) {
+    residuo = num % 10;
+    inverso = inverso * 10 + residuo;
+    aux = Math.floor(aux / 10);
   }
+
+  return num === inverso;
 };
 
 const poblarArrays = (arr, arrCapi, arrNoCapi) => {
