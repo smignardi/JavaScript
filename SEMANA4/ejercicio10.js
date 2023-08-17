@@ -18,11 +18,11 @@ const esCapicua = (arr1, arr2) => {
       isCapicua = false;
     }
   }
-  return isCapicua == true ? "SI" : "NO";
+  return isCapicua;
 };
 
 const imprimirMensaje = (answer) => {
-  console.log(`El array de JSON ${answer} es capicua`);
+  console.log(`El array de JSON ${answer == true ? "SI" : "NO"} es capicua`);
 };
 
 const arrayinvertido = invertirArray(listaNumeros);

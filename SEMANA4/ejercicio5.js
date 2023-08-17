@@ -37,12 +37,12 @@ const imprimirListaFormato1 = () => {
     );
   }
   console.log("LISTA DE INOCENTES :");
-  for (let k = 0; k < arrayInocentes.length; k++) {
+  for (let i = 0; i < arrayInocentes.length; i++) {
     console.log(
-      `${k + 1}. `,
-      arrayInocentes[k].nombre,
-      arrayInocentes[k].apellido1,
-      arrayInocentes[k].apellido2
+      `${i + 1}. `,
+      arrayInocentes[i].nombre,
+      arrayInocentes[i].apellido1,
+      arrayInocentes[i].apellido2
     );
   }
 };
