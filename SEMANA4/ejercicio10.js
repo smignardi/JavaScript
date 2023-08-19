@@ -12,13 +12,12 @@ const invertirArray = (arr) => {
 };
 
 const esCapicua = (arr1, arr2) => {
-  let isCapicua = true;
   for (let i = 0; i < arr1.length; i++) {
     if (arr1[i] != arr2[i]) {
-      isCapicua = false;
+      return false;
     }
   }
-  return isCapicua;
+  return true;
 };
 
 const imprimirMensaje = (answer) => {
